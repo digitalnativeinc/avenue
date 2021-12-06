@@ -1074,24 +1074,6 @@ dependencies = [
 
 [[package]]
 name = "ethereum"
-version = "0.9.0"
-source = "git+https://github.com/PlasmNetwork/ethereum?branch=polkadot-v0.9.12#2b98173bd88c05bfeefad421d260101b9008497b"
-dependencies = [
- "bytes 1.1.0",
- "ethereum-types",
- "hash-db",
- "hash256-std-hasher",
- "parity-scale-codec",
- "rlp",
- "rlp-derive",
- "scale-info",
- "serde",
- "sha3 0.9.1",
- "triehash",
-]
-
-[[package]]
-name = "ethereum"
 version = "0.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "81fb916554a4dba293ea69c69ad5653e21d770a9d0c2496b5fa0a1f5a3946d87"
@@ -1138,7 +1120,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2068bbfe82315b76637b601c73810ec7e92d542bad02f0155182915e832c6357"
 dependencies = [
  "environmental",
- "ethereum 0.10.0",
+ "ethereum",
  "evm-core",
  "evm-gasometer",
  "evm-runtime",
@@ -1273,7 +1255,7 @@ dependencies = [
 name = "fc-rpc"
 version = "2.0.0-dev"
 dependencies = [
- "ethereum 0.10.0",
+ "ethereum",
  "ethereum-types",
  "evm",
  "fc-consensus",
@@ -1317,7 +1299,7 @@ dependencies = [
 name = "fc-rpc-core"
 version = "1.1.0-dev"
 dependencies = [
- "ethereum 0.10.0",
+ "ethereum",
  "ethereum-types",
  "jsonrpc-core",
  "jsonrpc-core-client",
@@ -1405,7 +1387,7 @@ dependencies = [
 name = "fp-consensus"
 version = "2.0.0-dev"
 dependencies = [
- "ethereum 0.10.0",
+ "ethereum",
  "parity-scale-codec",
  "rlp",
  "sha3 0.8.2",
@@ -1429,7 +1411,7 @@ dependencies = [
 name = "fp-rpc"
 version = "3.0.0-dev"
 dependencies = [
- "ethereum 0.10.0",
+ "ethereum",
  "ethereum-types",
  "fp-evm",
  "parity-scale-codec",
@@ -1445,7 +1427,7 @@ dependencies = [
 name = "fp-self-contained"
 version = "1.0.0-dev"
 dependencies = [
- "ethereum 0.9.0",
+ "ethereum",
  "frame-support",
  "parity-scale-codec",
  "parity-util-mem",
@@ -3676,7 +3658,7 @@ dependencies = [
 name = "pallet-ethereum"
 version = "4.0.0-dev"
 dependencies = [
- "ethereum 0.10.0",
+ "ethereum",
  "ethereum-types",
  "evm",
  "fp-consensus",
