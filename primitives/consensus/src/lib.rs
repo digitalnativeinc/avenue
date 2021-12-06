@@ -141,7 +141,7 @@ pub fn find_log(digest: &Digest) -> Result<Log, FindLogError> {
 	found.ok_or(FindLogError::NotFound)
 }
 
-pub fn ensure_log<Hash>(digest: &Digest<Hash>) -> Result<(), FindLogError> {
+pub fn ensure_log(digest: &Digest) -> Result<(), FindLogError> {
 	let mut found = false;
 
 	for log in digest.logs() {
